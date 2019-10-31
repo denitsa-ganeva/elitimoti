@@ -1,0 +1,600 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #F8F8F8 url(images/overlay.png) repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .8);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    color: #2D2D2D;
+    text-align: center;
+}
+
+h2 {
+    padding: 0px 0px 30px 0px;
+    font-size: 2.50em;
+}
+
+p,
+ol,
+ul {
+    margin-top: 0px;
+    line-height: 32px;
+}
+
+p {
+    line-height: 180%;
+}
+
+
+/* Image Style************************************************/
+
+.image {
+    display: inline-block;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+}
+
+.image-full {
+    display: block;
+    width: 100%;
+    margin: -1em 0 3em 0;
+}
+
+.image-dsk {
+    display: block;
+    height: 80px;
+    width: auto;
+}
+
+.image-unicredit {
+    display: block;
+    height: 70px;
+    width: auto;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+hr {
+    display: none;
+}
+
+
+/** WRAPPER ****************************/
+
+#wrapper {
+    background: #FFF;
+    margin: 0px 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.full-width {
+    width: 100%;
+    margin: 0px auto;
+}
+
+
+/** HEADER ***************************/
+
+#header-wrapper {
+    background: #970A42 url(images/overlay.png);
+    background-size: cover;
+}
+
+#header {
+    position: relative;
+    overflow: hidden;
+    height: 160px;
+}
+
+#social {
+    position: absolute;
+    top: 4em;
+    right: 0;
+}
+
+
+/** LOGO ***********/
+
+#logo {
+    position: relative;
+    top: 3em;
+    left: 0;
+}
+
+#logo h1,
+#logo p {
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+}
+
+#logo h1 {
+    letter-spacing: -1px;
+    text-transform: lowercase;
+    font-size: 3.2em;
+    color: #FFF;
+}
+
+#logo p {
+    padding: 0px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #FFF;
+}
+
+#logo a {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+/** MENU ******************************************/
+
+#menu {
+    overflow: hidden;
+    background: #202020;
+    max-width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#menu ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+    list-style: none;
+    line-height: normal;
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    display: block;
+    padding: 0px 60px 0px 40px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+#menu a:hover,
+#menu .current_page_item a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+#page {
+    padding-top: 60px;
+}
+
+.map>iframe {
+    -webkit-filter: grayscale(80%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
+}
+
+
+/** PAGE ***************/
+
+.page {
+    overflow: hidden;
+    padding: 0 0 30px 0;
+}
+
+#page {
+    overflow: hidden;
+    padding: 0 0 30px 0;
+}
+
+#page img {
+    margin: 0 0 10px 0;
+}
+
+#page .title {
+    margin-bottom: 2em;
+}
+
+#page .title h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#page .title .byline {
+    display: block;
+    padding-bottom: 40px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#page .column1 {
+    width: 582px;
+}
+
+
+/* Footer ************/
+
+#footer {
+    overflow: hidden;
+    height: 150px;
+    padding-top: 30px;
+    margin: 0;
+    background-color: #202020;
+    font-weight: bold;
+}
+
+#footer address {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#footer address a {
+    color: #970A42;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#footer address a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+/* List style 1 */
+
+ul.style1 {
+    display: block;
+    float: right;
+    padding: 20px 10px 0 10px;
+    width: 600px;
+    list-style: none;
+}
+
+ul.style1 li {
+    padding: 15px 0px 15px 0px;
+    border-bottom: 0.1px solid #970A42;
+    text-align: center;
+}
+
+ul.style1 .first {
+    padding-top: 0px;
+    border-top: none;
+}
+
+ul.style1 li:hover {
+    background-color: #970A42;
+    color: whitesmoke;
+    transition: 0.7s;
+}
+
+
+/* List style 2 */
+
+ul.style2 {
+    display: block;
+    float: left;
+    padding: 20px 10px 0 10px;
+    width: 600px;
+    list-style: none;
+}
+
+ul.style2 li {
+    padding: 15px 0px 15px 0px;
+    border-bottom: 0.1px solid #970A42;
+    text-align: center;
+}
+
+ul.style2 li:hover {
+    background-color: #970A42;
+    color: whitesmoke;
+    transition: 0.7s;
+}
+
+ul.style2 .first {
+    padding-top: 0px;
+    border-top: none;
+}
+
+ul.style2 h3 {
+    padding: 0px 0px 10px 0px;
+    font-size: 1.10em;
+}
+
+ul.style2 h3 a {
+    color: #101010;
+}
+
+ul.style2 a {
+    text-decoration: none;
+}
+
+ul.style2 a:hover {
+    text-decoration: underline;
+}
+
+
+/* Portfolio*************************************/
+
+#portfolio-wrapper {
+    overflow: hidden;
+    padding: 5em 0em;
+    background: rgba(0, 0, 0, .02);
+    background-image: url(images/overlay.png);
+    background-repeat: repeat;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+#portfolio {
+    text-align: center;
+}
+
+#portfolio .icon {
+    display: inline-block;
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: #970A42;
+}
+
+#portfolio .box {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#portfolio h3 {
+    display: block;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#portfolio .title h2 {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#portfolio .title .byline {
+    display: block;
+    padding-bottom: 2em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+    width: 282px;
+}
+
+.column1,
+.column2,
+.column3 {
+    float: left;
+    margin-right: 24px;
+}
+
+.column4 {
+    float: right;
+}
+
+.partners {
+    float: left;
+    background-color: #970A42;
+    color: whitesmoke;
+    width: calc(50% - 65px);
+    margin: 100px 15px 100px 30px;
+    padding: 20px 0 20px 20px;
+}
+
+.partners h2 {
+    color: whitesmoke;
+    padding-top: 35px;
+}
+
+.partners a {
+    text-decoration: none;
+}
+
+#partners1 {
+    float: left;
+    border-radius: 20px 0 20px 0;
+}
+
+#partners2 {
+    float: right;
+    border-radius: 0 20px 0 20px;
+    margin: 100px 30px 100px 15px;
+}
+
+#partners1 img,
+#partners2 img {
+    float: left;
+    margin-top: 20px;
+}
+
+
+/* Heading Titles******************/
+
+.title {
+    margin-bottom: 3em;
+}
+
+.title h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.title .byline {
+    padding-top: 0.50em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #6F6F6F;
+}
+
+
+/* Button Style*************************************/
+
+.button {
+    display: inline-block;
+    background: #970A42;
+    border-radius: 30px 0 30px 0;
+    transition: 0.6s;
+}
+
+.button:hover {
+    border-radius: 0 30px 0 30px;
+    transition: 0.6s;
+    background: rgba(151, 10, 66, 0.76);
+}
+
+
+/* CONTACTS ******************************/
+
+.row {
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #6F6F6F;
+}
+
+.row .column {
+    width: calc(50% - 30px);
+    padding: 15px;
+    float: left;
+}
+
+.row .column h3 {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.row .column input,
+.row .column textarea {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    line-height: 1;
+    padding: 0 8px;
+    margin-bottom: 15px;
+    border: 1px solid #6F6F6F;
+}
+
+.row .column textarea {
+    height: 120px;
+    padding: 15px 8px;
+    resize: none;
+}
+
+.row .column button {
+    height: 50px;
+    padding: 0 30px;
+    line-height: 1;
+    margin: 0 auto;
+    display: table;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: .2px;
+    cursor: pointer;
+}
+
+.row .column input:focus,
+.row .column button:focus,
+.row .column textarea:focus {
+    outline: none;
+}
+
+.row .column input:focus,
+.row .column textarea:focus {
+    border-color: #970A42;
+}
+
+
+/* Social Icon Styles ******************/
+
+ul.contact {
+    display: inline-block;
+    margin: 0;
+    padding: 0.3em 0em 0.3em 0em;
+    list-style: none;
+}
+
+ul.contact li {
+    width: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 0.8em 0 0.5em;
+    text-align: center;
+}
+
+ul.contact li a i {
+    color: rgb(29, 31, 32);
+    font-size: 32px;
+}
+
+ul.contact li a i:hover {
+    color: whitesmoke;
+    font-size: 34px;
+}
+
+
+/* PARALLAX EFFECT ***************************************/
+
+.parallax {
+    background-image: url("images/parallax-1.jpg");
+    min-height: 180px;
+    margin: 40px 0 40px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax_text {
+    padding: 60px 0 60px 0;
+}
